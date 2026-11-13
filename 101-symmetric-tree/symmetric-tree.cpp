@@ -33,9 +33,10 @@ public:
         invert(root->left);
 
         bool ans = isSame(root->left, root->right);
-
+        // we have stored the bool in ans
         invert(root->left);
-
+        // again inverted the left side , so the tree reamains same as question
         return ans;
+        //printed value of bool stored in ans
     }
 };
